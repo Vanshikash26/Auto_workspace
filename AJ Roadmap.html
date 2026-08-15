@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automation Mastery Roadmap</title>
+<style>
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f4f6fb;margin:0;padding:20px;color:#222}
+.wrap{max-width:960px;margin:auto;background:#fff;border:2px solid #b9c2d4;padding:25px 30px;border-radius:10px}
+h1{text-align:center;letter-spacing:2px;margin-bottom:2px}
+.sub{text-align:center;color:#555;margin:0 0 20px}
+h2{background:#1f3864;color:#fff;padding:9px 14px;border-radius:6px;margin-top:38px}
+h3{color:#1f3864;border-left:5px solid #f6a609;padding-left:10px;margin-top:26px}
+h4{color:#b3541e;margin:12px 0 6px}
+ul{margin:4px 0 12px;padding-left:22px}
+li{margin:3px 0}
+li ul{margin:2px 0 5px}
+pre{background:#0f2540;color:#7ee787;padding:12px;border-radius:6px;overflow-x:auto;font-size:13px}
+code{background:#eef1f7;padding:1px 5px;border-radius:4px;font-size:13px}
+label{display:block;margin:3px 0}
+table{border-collapse:collapse;width:100%;margin:8px 0}
+th,td{border:1px solid #999;padding:6px 8px;font-size:13px;text-align:left}
+th{background:#eef1f7}
+hr{border:none;border-top:2px dashed #b9c2d4;margin:28px 0}
+@media print{body{background:#fff;padding:0}.wrap{border:none}}
+/* ===== CUTE ADDITIONS ===== */
+
+/* Gradient Background for h1 */
+h1{
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.5em;
+}
+
+/* Glowing effect on h2 hover */
+h2:hover{
+  box-shadow: 0 0 20px rgba(31, 56, 100, 0.3);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Card-like styling for h3 */
+h3{
+  background: linear-gradient(90deg, #f6a609 0%, transparent 100%);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+/* Cute checkboxes */
+input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+/* Hover effect on list items */
+li:hover{
+  background: #f0f4ff;
+  padding-left: 5px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+/* Code blocks with shadow */
+pre{
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-left: 4px solid #667eea;
+}
+
+/* Animated emoji on h3 */
+h3::before{
+  content: "✨ ";
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle{
+  0%, 100%{opacity: 1;}
+  50%{opacity: 0.5;}
+}
+
+/* Table hover rows */
+tr:hover{
+  background: #fff3cd;
+}
+
+/* Links styling */
+a{
+  color: #667eea;
+  text-decoration: none;
+  border-bottom: 2px dotted #667eea;
+}
+
+a:hover{
+  color: #764ba2;
+  border-bottom: 2px solid #764ba2;
+}
+
+/* Cute scrollbar */
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 10px;
+}
+
+/* Floating animation for main container */
+.wrap{
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%, 100%{transform: translateY(0px);}
+  50%{transform: translateY(-5px);}
+}
+/* ===== KAWAII MODE 🎀 ===== */
+h1,h2,h3,h4{font-family:'Segoe Print','Comic Sans MS',cursive}
+body{
+  background: linear-gradient(120deg,#ffe0f0,#e0f0ff,#e8ffe0,#fff5e0);
+  background-size:300% 300%;
+  animation:bgshift 12s ease infinite;
+}
+@keyframes bgshift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.wrap{border:3px dashed #ff9ecb;border-radius:25px;box-shadow:0 10px 30px rgba(255,158,203,.25)}
+h2{background:linear-gradient(90deg,#ff9ecb,#a5b4fc,#8ee8c4);border-radius:999px;text-align:center}
+h3{background:linear-gradient(104deg,rgba(255,214,10,0) 1%,rgba(255,214,10,.6) 4%,rgba(255,214,10,.25) 90%,rgba(255,214,10,0) 98%);border-radius:.5em;padding:.2em .5em}
+li::marker{content:"🌸 "}
+input[type=checkbox]{accent-color:#ff6fa5;transform:scale(1.2)}
+pre{border-radius:15px;position:relative;padding-top:30px}
+pre::before{content:"● ● ●";position:absolute;top:8px;left:14px;color:#ff6f91;letter-spacing:4px;font-size:12px}
+h4:hover{animation:wiggle .4s ease}
+@keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-2deg)}75%{transform:rotate(2deg)}}
+::selection{background:#ffd1e8;color:#7a1f4d}
+h1::after{content:" 🎀";display:inline-block;animation:bounce 1.5s infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.float-heart{position:fixed;bottom:-40px;font-size:22px;animation:rise 10s linear infinite;opacity:.6;z-index:0;pointer-events:none}
+@keyframes rise{0%{transform:translateY(0);opacity:0}10%{opacity:.6}100%{transform:translateY(-110vh);opacity:0}}
+/* ===== A1 AESTHETIC PACK 💎 ===== */
+html{scroll-behavior:smooth}
+body{background:#0b0d1a;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;z-index:-1;border-radius:50%;filter:blur(90px);opacity:.5}
+body::before{width:420px;height:420px;background:#7c3aed;top:-120px;left:-120px;animation:drift 14s ease-in-out infinite alternate}
+body::after{width:380px;height:380px;background:#ec4899;bottom:-120px;right:-120px;animation:drift 16s ease-in-out infinite alternate-reverse}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(60px,40px) scale(1.15)}}
+
+.wrap{background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.6);border-radius:28px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+
+h1{background:linear-gradient(90deg,#ec4899,#8b5cf6,#06b6d4,#ec4899);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:300% 0}}
+
+h2{background:linear-gradient(90deg,#8b5cf6,#ec4899);border-radius:16px;box-shadow:0 6px 18px rgba(139,92,246,.35)}
+h3{border-left:5px solid #8b5cf6;background:linear-gradient(90deg,rgba(139,92,246,.12),transparent)}
+
+pre{background:#12142b;border:1px solid rgba(139,92,246,.4);box-shadow:0 8px 24px rgba(0,0,0,.35)}
+
+input[type=checkbox]{accent-color:#8b5cf6}
+
+.spark{position:fixed;z-index:0;color:#fff;animation:twinkle 3s ease-in-out infinite;pointer-events:none;text-shadow:0 0 8px #fff}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.8)}50%{opacity:.9;transform:scale(1.2)}}
+
+.top{position:fixed;right:22px;bottom:22px;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#ec4899,#8b5cf6);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;text-decoration:none;box-shadow:0 8px 20px rgba(236,72,153,.4);z-index:5;transition:.3s}
+.top:hover{transform:translateY(-4px) scale(1.05)}
+
+.progress{position:fixed;top:0;left:0;height:4px;width:100%;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,#ec4899,#8b5cf6,#06b6d4);z-index:9;animation:grow linear;animation-timeline:scroll()}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+</style>
+</head>
+<body>
+<div class="progress"></div>
+<span class="spark" style="top:15%;left:6%">✦</span>
+<span class="spark" style="top:30%;left:92%;animation-delay:.8s">✧</span>
+<span class="spark" style="top:55%;left:4%;animation-delay:1.4s">✦</span>
+<span class="spark" style="top:70%;left:95%;animation-delay:2s">✧</span>
+<span class="spark" style="top:88%;left:8%;animation-delay:2.6s">✦</span>
+<a class="top" href="#">⬆</a>	
+<span class="float-heart" style="left:8%;animation-delay:0s">💖</span>
+<span class="float-heart" style="left:28%;animation-delay:2s">🌸</span>
+<span class="float-heart" style="left:50%;animation-delay:4s">💕</span>
+<span class="float-heart" style="left:70%;animation-delay:6s">✨</span>
+<span class="float-heart" style="left:88%;animation-delay:8s">💗</span>	<span class="float-heart" style="left:8%;animation-delay:0s">💖</span>
+<span class="float-heart" style="left:28%;animation-delay:2s">🌸</span>
+<span class="float-heart" style="left:50%;animation-delay:4s">💕</span>
+<span class="float-heart" style="left:70%;animation-delay:6s">✨</span>
+<span class="float-heart" style="left:88%;animation-delay:8s">💗</span>
+<div class="wrap">
+<h1>🤖 AUTOMATION MASTERY ROADMAP</h1>
+<p class="sub">Zero to First Client | 60 Days | Python</p>
+
+<h2>📌 HOW TO USE THIS GUIDE</h2>
+<ul>
+<li>Roz sirf 1 day follow karo. Jump mat karo.</li>
+<li>Har day mein 3 cheezein hain: SEEKHO → TASK → GITHUB COMMIT</li>
+<li>Agar koi din miss ho jaye, toh agle din double mat padho — wahi 1 day karo.</li>
+<li>Ye file apne paas rakho, roz shaam ko tick mark karo.</li>
+</ul>
+
+<h2>🧠 GOLDEN RULES (Instructor ke 7 Commandments)</h2>
+<ul>
+<li>1. 📊 70/30 Rule → 30% time video/docs, 70% time khud code likhna.</li>
+<li>2. 🚫 Tutorial Hell Forbidden → Video dekh ke code khud type karo, copy-paste NAHI.</li>
+<li>3. 📝 Daily Commit → Roz kam se kam 1 GitHub commit. Chahe chhota ho.</li>
+<li>4. ⏱️ 30-Minute Stuck Rule → 30 min se zyada atke ho? Debugging SOP use karo.</li>
+<li>5. 📓 Notes File → notes.md banao, roz 3 lines likho aaj kya seekha.</li>
+<li>6. 💬 English Comments → Code mein English comments likhna (clients ke liye).</li>
+<li>7. 🔄 Consistency &gt; Intensity → Roz 2 ghante &gt; hafte mein ek din 14 ghante.</li>
+</ul>
+
+<h2>🛠️ PHASE 0 — SETUP (DAY 0)</h2>
+<h3>📅 DAY 0: Environment Setup</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Python installation process aur PATH variable kya hota hai</li>
+<li>Code Editor (VS Code ya Cursor) kaise install karte hain</li>
+<li>Terminal/Command Prompt kaise use karte hain</li>
+<li>Virtual environment kya hota hai aur kyu zaroori hai</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Python Install Karo<ul><li>Link: python.org/downloads</li><li>⚠️ "Add Python to PATH" tick karna ZAROORI hai</li><li>Verify: Terminal kholo → python --version</li></ul></li>
+<li>2️⃣ VS Code Install Karo<ul><li>Link: code.visualstudio.com</li><li>Extensions: "Python" aur "Pylance"</li></ul></li>
+<li>3️⃣ Git Install Karo<ul><li>Link: git-scm.com</li><li>Verify: git --version</li></ul></li>
+<li>4️⃣ GitHub Account Banao<ul><li>Link: github.com</li><li>Username professional rakho</li></ul></li>
+<li>5️⃣ Folder Structure Banao<ul><li>C:\Automation\ → andar day01, day02... folders</li></ul></li>
+<li>6️⃣ Pehla Test<ul><li>hello.py banao → print("Hello Automation") → python hello.py</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - "How to Install Python" (YouTube)</li>
+<li>🎬 English: Programming with Mosh - "Python Installation" (YouTube)</li>
+<li>📖 Docs: Python.org installation guide</li>
+<li>🖥️ Interactive: W3Schools - "Python Get Started"</li>
+<li>🔧 Git: git-scm.com/book/en/v2/Getting-Started-Installing-Git</li>
+</ul>
+<h4>✅ SUCCESS CHECKLIST</h4>
+<label><input type="checkbox"> Python installed hai</label>
+<label><input type="checkbox"> VS Code/Cursor installed hai</label>
+<label><input type="checkbox"> Git installed hai</label>
+<label><input type="checkbox"> GitHub account ban gaya hai</label>
+<label><input type="checkbox"> Folder structure ready hai</label>
+<label><input type="checkbox"> hello.py run ho gaya hai</label>
+
+<h2>📊 PHASE 1 — PYTHON FOUNDATION (DAY 1-10)</h2>
+
+<h3>📅 DAY 1: First Steps</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>print() function - output kaise dikhate hain</li>
+<li>Variables - data ko store karna (boxes ki tarah)</li>
+<li>Data types: int, float, str, bool</li>
+<li>input() function - user se data lena</li>
+<li>f-strings - text aur variables ko combine karna</li>
+<li>Comments kaise likhte hain (# symbol)</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Age Calculator<ul><li>User se birth year lo</li><li>Current year se subtract karo</li><li>Age print karo with f-string</li></ul></li>
+<li>2️⃣ Greeting Bot<ul><li>User se naam lo</li><li>User se favorite color lo</li><li>Print: Hello {name}! Your favorite color is {color}.</li></ul></li>
+<li>3️⃣ Simple Math<ul><li>Do numbers lo user se</li><li>Addition, subtraction, multiplication, division print karo</li><li>Note: input() hamesha string return karta hai, int() se convert karo</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - Python Tutorial #1 to #5</li>
+<li>🎬 English: Programming with Mosh - "Python for Beginners" (First 30 min)</li>
+<li>🖥️ Interactive: W3Schools - Variables, Data Types, Input</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 1 &amp; 2</li>
+<li>🏋️ Practice: HackerRank - "Say Hello, World!"</li>
+</ul>
+<h4>💻 CODE EXAMPLE</h4>
+<pre>name = input("Enter your name: ")
+birth_year = int(input("Enter your birth year: "))
+current_year = 2026
+age = current_year - birth_year
+print(f"Hello {name}! You are {age} years old.")</pre>
+
+<h3>📅 DAY 2: Strings &amp; Operators</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Arithmetic operators: +, -, *, /, //, %, **</li>
+<li>Comparison operators: ==, !=, &gt;, &lt;, &gt;=, &lt;=</li>
+<li>Logical operators: and, or, not</li>
+<li>Type conversion: int(), float(), str()</li>
+<li>String methods: .strip(), .lower(), .upper(), .replace(), .split()</li>
+<li>String indexing aur slicing: text[0], text[1:5]</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Input Cleaner<ul><li>User se messy input lo: "  HeLLo WoRLD  "</li><li>.strip() se spaces hatao</li><li>.lower() se lowercase karo</li><li>.upper() se uppercase karo</li><li>.replace() se word change karo</li></ul></li>
+<li>2️⃣ Discount Calculator<ul><li>User se amount lo</li><li>Discount percentage lo</li><li>Discounted price calculate karo</li></ul></li>
+<li>3️⃣ String Analyzer<ul><li>User se sentence lo</li><li>Count: characters, words, vowels</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - Python Tutorial #6 to #10</li>
+<li>🎬 English: Corey Schafer - "Python Strings Tutorial"</li>
+<li>🖥️ Interactive: W3Schools - Operators, Strings</li>
+<li>🏋️ Practice: HackerRank - "String Formatting"</li>
+</ul>
+
+<h3>📅 DAY 3: Conditions (If-Else)</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>if statement - ek condition check karna</li>
+<li>elif statement - multiple conditions</li>
+<li>else statement - default case</li>
+<li>Nested conditions - if ke andar if</li>
+<li>Indentation kyu zaroori hai</li>
+<li>Truthy aur Falsy values</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Grading System<ul><li>User se marks lo (0-100)</li><li>90+ = A, 80-89 = B, 70-79 = C, 60-69 = D, below 60 = F</li><li>Print grade with message</li></ul></li>
+<li>2️⃣ Even/Odd Checker<ul><li>User se number lo</li><li>Check even ya odd</li><li>Print result</li></ul></li>
+<li>3️⃣ Login System (Simple)<ul><li>Predefined username/password store karo</li><li>User se input lo</li><li>Match check karo</li><li>Success/failure message</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - Python Tutorial #11 to #13</li>
+<li>🎬 English: Programming with Mosh - "If-Else Statements"</li>
+<li>🖥️ Interactive: W3Schools - Python If...Else</li>
+<li>🏋️ Practice: HackerRank - "Python If-Else"</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 2</li>
+</ul>
+
+<h3>📅 DAY 4: Loops (For &amp; While)</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>for loop - ek sequence par iterate karna</li>
+<li>while loop - condition true hone tak repeat</li>
+<li>range() function - numbers generate karna</li>
+<li>break statement - loop se bahar nikalna</li>
+<li>continue statement - current iteration skip</li>
+<li>Infinite loops se kaise bachein</li>
+<li>Nested loops</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Table Printer<ul><li>User se number lo</li><li>Multiplication table print karo (1 to 10)</li></ul></li>
+<li>2️⃣ Number Guessing Game<ul><li>Random number choose karo (import random)</li><li>User ko 5 chances do</li><li>Hint do: "Too high" ya "Too low"</li><li>"You won!" print karo</li></ul></li>
+<li>3️⃣ Sum Calculator<ul><li>User se numbers lo one by one</li><li>Jab tak "done" na type kare, add karte raho</li><li>End mein total sum print karo</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - Python Tutorial #14 to #16</li>
+<li>🎬 English: Corey Schafer - "Python For Loops Tutorial"</li>
+<li>🖥️ Interactive: W3Schools - For Loops, While Loops</li>
+<li>🏋️ Practice: HackerRank - "Loops"</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 2</li>
+</ul>
+
+<h3>📅 DAY 5: Lists &amp; Tuples</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>List kya hoti hai - multiple items store karna</li>
+<li>List indexing: list[0], list[-1]</li>
+<li>List slicing: list[1:4]</li>
+<li>List methods: .append(), .insert(), .remove(), .pop(), .sort()</li>
+<li>List comprehension (basic)</li>
+<li>Tuples - immutable lists</li>
+<li>List vs Tuple - kab kya use karein</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ To-Do List CLI<ul><li>Empty list banao</li><li>Options: Add, View, Remove, Exit</li><li>While loop se menu chalao</li></ul></li>
+<li>2️⃣ Shopping Cart<ul><li>Empty list banao</li><li>Products add karwao</li><li>Total items count karo</li></ul></li>
+<li>3️⃣ Student Marks Manager<ul><li>List: [85, 90, 78, 92, 88]</li><li>Calculate: average, highest, lowest</li><li>Sort ascending/descending</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - Python Tutorial #17 to #19</li>
+<li>🎬 English: Corey Schafer - "Python Lists Tutorial"</li>
+<li>🖥️ Interactive: W3Schools - Lists, Tuples</li>
+<li>🏋️ Practice: HackerRank - "Lists"</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 4</li>
+</ul>
+
+<h3>📅 DAY 6: Dictionaries &amp; Sets</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Dictionary - key-value pairs</li>
+<li>Dict creation: {"name": "Vansh", "age": 25}</li>
+<li>Dict methods: .get(), .keys(), .values(), .items(), .pop()</li>
+<li>Dictionary iteration</li>
+<li>Sets - unique items ka collection</li>
+<li>Set methods: .add(), .remove(), .union()</li>
+<li>Nested dictionaries</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Contact Book<ul><li>Empty dictionary banao</li><li>Name aur phone number lo</li><li>Store: contacts[name] = phone</li><li>Search aur Delete functionality</li></ul></li>
+<li>2️⃣ Student Database<ul><li>Nested dict with student details</li><li>Add, view, search, calculate average</li></ul></li>
+<li>3️⃣ Word Frequency Counter<ul><li>User se sentence lo</li><li>Har word count karo using dictionary</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - Python Tutorial #20 to #22</li>
+<li>🎬 English: Corey Schafer - "Python Dictionaries Tutorial"</li>
+<li>🖥️ Interactive: W3Schools - Dictionaries, Sets</li>
+<li>🏋️ Practice: HackerRank - "Nested Lists"</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 5</li>
+</ul>
+
+<h3>📅 DAY 7: Functions</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Function kya hota hai - reusable code block</li>
+<li>def keyword se function banana</li>
+<li>Parameters aur arguments</li>
+<li>return statement</li>
+<li>Default parameters</li>
+<li>Local vs Global variables</li>
+<li>Lambda functions (basic)</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Calculator Functions<ul><li>4 functions: add(), subtract(), multiply(), divide()</li><li>User se 2 numbers lo</li><li>Operation choose karwao</li><li>Function call karo</li></ul></li>
+<li>2️⃣ Password Generator<ul><li>Function: generate_password(length)</li><li>Random characters, numbers, symbols</li><li>Return generated password</li></ul></li>
+<li>3️⃣ Temperature Converter<ul><li>celsius_to_fahrenheit(), fahrenheit_to_celsius()</li><li>User se choice lo</li><li>Convert aur print karo</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - Python Tutorial #23 to #26</li>
+<li>🎬 English: Corey Schafer - "Python Functions Tutorial"</li>
+<li>🖥️ Interactive: W3Schools - Python Functions</li>
+<li>🏋️ Practice: HackerRank - "Write a function"</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 3</li>
+</ul>
+
+<h3>📅 DAY 8: File Handling + OS Module</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>File kholna: open() function</li>
+<li>Read modes: "r", "w", "a"</li>
+<li>with statement - safe file handling</li>
+<li>File methods: .read(), .readline(), .write()</li>
+<li>OS module: os.listdir(), os.makedirs(), os.rename()</li>
+<li>File paths: absolute vs relative</li>
+<li>Exception handling for files</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ File Word Counter<ul><li>Text file kholo</li><li>Count: characters, words, lines</li><li>Results new file mein save karo</li></ul></li>
+<li>2️⃣ File Organizer Script<ul><li>Folder ke saare files list karo</li><li>Extensions se categorize: .txt, .py, .jpg, .pdf</li><li>Subfolders banao</li><li>Files move karo</li></ul></li>
+<li>3️⃣ Daily Journal<ul><li>User se entry lo</li><li>Date ke saath file mein append karo</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - Python Tutorial #27 to #30</li>
+<li>🎬 English: Corey Schafer - "File Handling Tutorial"</li>
+<li>🖥️ Interactive: W3Schools - File Handling</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 9</li>
+<li>📖 Docs: Python os module</li>
+</ul>
+
+<h3>📅 DAY 9: Errors + pip + Virtualenv</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Common errors: SyntaxError, TypeError, ValueError, NameError</li>
+<li>Error messages kaise padhna hai (traceback)</li>
+<li>try, except, finally blocks</li>
+<li>Multiple exceptions handle karna</li>
+<li>pip package manager</li>
+<li>Virtual environment: python -m venv</li>
+<li>requirements.txt file</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Crash-Proof Calculator<ul><li>User se input lo</li><li>Try-except se invalid input handle karo</li><li>Division by zero handle karo</li><li>Friendly error messages</li></ul></li>
+<li>2️⃣ Library Explorer<ul><li>pip install requests</li><li>pip list se packages dekho</li><li>Simple script with requests</li></ul></li>
+<li>3️⃣ Virtual Environment Practice<ul><li>python -m venv myenv</li><li>Activate: myenv\Scripts\activate</li><li>Library install karo</li><li>pip freeze &gt; requirements.txt</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - Python Tutorial #31 to #34</li>
+<li>🎬 English: Corey Schafer - "Exception Handling Tutorial"</li>
+<li>🖥️ Interactive: W3Schools - Try Except</li>
+<li>📖 Docs: pip.pypa.io</li>
+<li>📖 Docs: Python venv module</li>
+</ul>
+
+<h3>📅 DAY 10: 🏆 MINI PROJECT — FILE ORGANIZER</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Ab tak seekha hua sab combine karna</li>
+<li>Project structure kaise banate hain</li>
+<li>Functions ka use karke code organize karna</li>
+<li>Error handling in real projects</li>
+<li>README file kaise likhte hain</li>
+</ul>
+<h4>✅ TASK: Build Complete File Organizer</h4>
+<ul>
+<li>1️⃣ User se folder path lo</li>
+<li>2️⃣ Saare files scan karo</li>
+<li>3️⃣ Categorize karo:<ul><li>Images: .jpg, .jpeg, .png, .gif</li><li>Documents: .pdf, .doc, .docx, .txt</li><li>Videos: .mp4, .avi, .mkv</li><li>Audio: .mp3, .wav</li><li>Code: .py, .js, .html</li><li>Archives: .zip, .rar, .7z</li><li>Others: baaki sab</li></ul></li>
+<li>4️⃣ Har category ke liye folder banao</li>
+<li>5️⃣ Files move karo</li>
+<li>6️⃣ Summary report print karo</li>
+<li>7️⃣ Log file banao</li>
+<li>8️⃣ README.md likho</li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: CodeWithHarry - "Python Project: File Organizer"</li>
+<li>📖 Reference: Automate the Boring Stuff - Chapter 10</li>
+<li>🔍 GitHub: Search "Python file organizer"</li>
+<li>📖 Docs: Python os module</li>
+</ul>
+<h4>✅ SUCCESS CHECKLIST</h4>
+<label><input type="checkbox"> Script files categorize karta hai</label>
+<label><input type="checkbox"> Folders automatically create hote hain</label>
+<label><input type="checkbox"> Files correctly move hote hain</label>
+<label><input type="checkbox"> Error handling hai</label>
+<label><input type="checkbox"> Summary report print hota hai</label>
+<label><input type="checkbox"> Log file maintain hota hai</label>
+<label><input type="checkbox"> README.md likha hai</label>
+<label><input type="checkbox"> GitHub par push kiya hai</label>
+
+<h2>📊 PHASE 2 — DATA &amp; EXCEL AUTOMATION (DAY 11-14)</h2>
+
+<h3>📅 DAY 11: Excel with openpyxl</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>pip install openpyxl</li>
+<li>Workbook create: Workbook()</li>
+<li>Sheet access: wb.active, wb.create_sheet()</li>
+<li>Cell read/write: sheet["A1"] = "Value"</li>
+<li>Rows aur columns iterate karna</li>
+<li>Basic styling: font, color, alignment</li>
+<li>Formulas: =SUM(A1:A10)</li>
+<li>Save: wb.save("file.xlsx")</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Expense Tracker Creator<ul><li>Excel file banao: expenses.xlsx</li><li>Columns: Date, Item, Category, Amount</li><li>5 sample entries</li><li>Total formula</li><li>Header bold</li></ul></li>
+<li>2️⃣ Student Report Card<ul><li>Columns: Name, Subject1-3, Total, Average</li><li>5 students data</li><li>Total/Average formulas</li><li>Top scorer highlight</li></ul></li>
+<li>3️⃣ Invoice Generator<ul><li>Company, client, items, prices</li><li>Subtotal, tax, total</li><li>Professional formatting</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - "Excel Automation with Python"</li>
+<li>🎬 English: Corey Schafer - "openpyxl Tutorial"</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 13</li>
+<li>📖 Docs: openpyxl.readthedocs.io</li>
+</ul>
+
+<h3>📅 DAY 12: Pandas Basics</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>pip install pandas</li>
+<li>DataFrame - Excel jaisa table</li>
+<li>pd.read_csv(), pd.read_excel()</li>
+<li>df.head(), df.tail(), df.info()</li>
+<li>df.columns, df.shape</li>
+<li>Filtering: df[df["column"] &gt; value]</li>
+<li>Sorting: df.sort_values()</li>
+<li>Missing values: df.isnull().sum()</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ CSV Explorer<ul><li>Sample CSV download karo (Kaggle)</li><li>Load pandas se</li><li>Print: first 5, last 5, columns, shape</li><li>Check missing values</li></ul></li>
+<li>2️⃣ Data Filter<ul><li>CSV load karo</li><li>Filter: value &gt; 100</li><li>Sort: highest to lowest</li><li>Save filtered CSV</li></ul></li>
+<li>3️⃣ Excel to CSV Converter<ul><li>Excel load karo</li><li>CSV mein convert</li><li>Compare dono files</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - "Pandas Tutorial Hindi"</li>
+<li>🎬 English: Keith Galli - "Pandas Tutorial"</li>
+<li>🖥️ Interactive: Kaggle Learn - Pandas (free)</li>
+<li>📖 Docs: pandas.pydata.org</li>
+<li>🏋️ Practice: Kaggle.com datasets</li>
+</ul>
+
+<h3>📅 DAY 13: Pandas Advanced + Email</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>df.groupby() - data groups mein divide</li>
+<li>df.merge() - two tables join</li>
+<li>df.fillna(), df.dropna() - missing values</li>
+<li>df.to_excel() - Excel export</li>
+<li>Email: smtplib, email.mime</li>
+<li>Gmail App Password setup (2FA)</li>
+<li>Attachment bhejna</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Sales Report Generator<ul><li>Sales CSV load karo</li><li>Group by: region, category</li><li>Calculate: total, average</li><li>Excel export with formatting</li></ul></li>
+<li>2️⃣ Data Cleaning Pipeline<ul><li>Messy CSV load karo</li><li>Remove duplicates, fill missing</li><li>Save clean version</li></ul></li>
+<li>3️⃣ Email Automation<ul><li>Test email bhejo apne aap ko</li><li>Subject, body, attachment</li><li>Gmail App Password use karo</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - "Pandas Advanced"</li>
+<li>🎬 English: Corey Schafer - "Pandas GroupBy"</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 16</li>
+<li>🔧 Gmail: Account → Security → 2FA → App Passwords</li>
+</ul>
+
+<h3>📅 DAY 14: 🏆 PROJECT — AUTO REPORT GENERATOR</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Pandas + openpyxl + Email combine karna</li>
+<li>Automated reporting workflow</li>
+<li>Error handling in production</li>
+<li>Logging for debugging</li>
+</ul>
+<h4>✅ TASK: Build Complete Auto Report Generator</h4>
+<ul>
+<li>📥 Input: Messy sales CSV</li>
+<li>⚙️ Processing:<ul><li>Load with pandas</li><li>Clean: duplicates, missing values</li><li>Analyze: total sales, top products, regional</li></ul></li>
+<li>📤 Output:<ul><li>Excel with 3 sheets: Sheet 1: Summary, Sheet 2: Top Products, Sheet 3: Regional Performance</li></ul></li>
+<li>📧 Delivery:<ul><li>Auto-email with attachment</li><li>Log: success message</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Python automated Excel report" (YouTube)</li>
+<li>📖 Book: Automate the Boring Stuff - Ch 13, 16</li>
+<li>📖 Docs: pandas.pydata.org</li>
+<li>📖 Docs: openpyxl.readthedocs.io</li>
+</ul>
+<h4>✅ SUCCESS CHECKLIST</h4>
+<label><input type="checkbox"> CSV load hota hai</label>
+<label><input type="checkbox"> Data cleaning works</label>
+<label><input type="checkbox"> Excel report generate hota hai</label>
+<label><input type="checkbox"> Multiple sheets hain</label>
+<label><input type="checkbox"> Email send hota hai with attachment</label>
+<label><input type="checkbox"> Error handling hai</label>
+<label><input type="checkbox"> Logging hai</label>
+<label><input type="checkbox"> README.md likha hai</label>
+<label><input type="checkbox"> GitHub par push kiya hai</label>
+
+<h2>🕸️ PHASE 3 — WEB SCRAPING (DAY 15-24)</h2>
+
+<h3>📅 DAY 15: Internet + Requests</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>HTTP protocol kya hai</li>
+<li>GET vs POST requests</li>
+<li>Status codes: 200, 403, 404, 429</li>
+<li>Headers: User-Agent, Content-Type</li>
+<li>pip install requests</li>
+<li>requests.get(), response.text, .status_code, .json()</li>
+<li>Response headers check karna</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Status Code Checker<ul><li>5 websites URLs list mein</li><li>GET request bhejo har ek par</li><li>Print: URL, status code, response time</li></ul></li>
+<li>2️⃣ HTML Downloader<ul><li>Website ka HTML download karo</li><li>File mein save: website.html</li><li>Browser mein open karke dekho</li></ul></li>
+<li>3️⃣ API Tester<ul><li>https://api.github.com/users/username par GET</li><li>JSON response print karo</li><li>Extract: name, followers, repos</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - "Requests Library"</li>
+<li>🎬 English: freeCodeCamp - "Web Scraping with Python" (30 min)</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 12</li>
+<li>📖 Docs: requests.readthedocs.io</li>
+</ul>
+
+<h3>📅 DAY 16: HTML + BeautifulSoup</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>HTML structure: tags, classes, IDs</li>
+<li>pip install beautifulsoup4</li>
+<li>soup = BeautifulSoup(html, "html.parser")</li>
+<li>soup.find() - first element</li>
+<li>soup.find_all() - saare elements</li>
+<li>.get_text() - text extract</li>
+<li>.get() - attribute value (href, src)</li>
+<li>CSS selectors: soup.select("div.classname")</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Quotes Scraper<ul><li>https://quotes.toscrape.com</li><li>Saare quotes scrape karo</li><li>Saare authors scrape karo</li><li>Format: "Quote" - Author</li></ul></li>
+<li>2️⃣ Book Titles Scraper<ul><li>https://books.toscrape.com</li><li>First 10 books titles</li><li>Prices scrape karo</li><li>Print: Title - Price</li></ul></li>
+<li>3️⃣ Links Extractor<ul><li>Kisi bhi website ke saare links</li><li>Filter: sirf .com wale</li><li>Count: kitne links mile</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - "BeautifulSoup Tutorial"</li>
+<li>🎬 English: freeCodeCamp - "Web Scraping" (Full)</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 12</li>
+<li>📖 Docs: beautiful-soup-4.readthedocs.io</li>
+<li>🏋️ Practice: quotes.toscrape.com, books.toscrape.com</li>
+</ul>
+
+<h3>📅 DAY 17: CSS Selectors + CSV Export</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>CSS selectors: .class, #id, tag, tag.class</li>
+<li>soup.select() method</li>
+<li>Nested selectors: div.class &gt; span</li>
+<li>Data cleaning: .strip(), .replace()</li>
+<li>CSV module: csv.writer(), csv.DictWriter()</li>
+<li>Data export: df.to_csv()</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Books Scraper with CSV<ul><li>books.toscrape.com se scrape: Title, Price, Rating, Availability</li><li>CSV export: books.csv</li><li>Clean: currency hatao, price float banao</li></ul></li>
+<li>2️⃣ News Headlines Scraper<ul><li>News site se headlines</li><li>CSV with timestamp</li><li>Format: Date, Headline, Source</li></ul></li>
+<li>3️⃣ Product Data Scraper<ul><li>Practice site se products</li><li>Filter: in-stock only</li><li>Sort by price</li><li>Export CSV</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: freeCodeCamp - "CSS Selectors for Scraping"</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 12</li>
+<li>📖 Reference: W3Schools - CSS Selectors</li>
+<li>📖 Docs: Python csv module</li>
+</ul>
+
+<h3>📅 DAY 18: Pagination + Politeness</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Pagination - multiple pages handle karna</li>
+<li>URL patterns: page/1/, page/2/</li>
+<li>Loop through pages</li>
+<li>time.sleep() - rate limiting</li>
+<li>Random delays: time.sleep(random.uniform(1, 3))</li>
+<li>User-Agent headers</li>
+<li>Respect robots.txt</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Multi-Page Quotes Scraper<ul><li>quotes.toscrape.com ke saare 10 pages</li><li>Har page par 2-3 sec delay</li><li>Total quotes count</li><li>CSV export</li></ul></li>
+<li>2️⃣ All Books Scraper<ul><li>books.toscrape.com ke saare 50 pages</li><li>1000 books collect</li><li>Random delays</li><li>Progress: Scraping page 5/50...</li></ul></li>
+<li>3️⃣ Rate Limiter<ul><li>Function: polite_request(url)</li><li>Random delay har request ke baad</li><li>Retry: agar 429 aaye toh wait + retry</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: freeCodeCamp - "Web Scraping Pagination"</li>
+<li>📖 Docs: robotstxt.org</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 12</li>
+</ul>
+
+<h3>📅 DAY 19: Data Cleaning + ETHICS</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Scraped data cleaning techniques</li>
+<li>String cleaning: .strip(), .replace(), regex</li>
+<li>Type conversion: string to float, int</li>
+<li>Data validation</li>
+<li>Web scraping ethics:<ul><li>robots.txt respect</li><li>Rate limiting</li><li>Terms of Service check</li><li>Personal data (GDPR) rules</li><li>API preference over scraping</li></ul></li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Data Cleaning Pipeline<ul><li>Books.toscrape.com se scrape</li><li>Clean: currency hatao, price float</li><li>Validate: ratings 1-5 scale</li><li>Export clean CSV</li></ul></li>
+<li>2️⃣ robots.txt Checker<ul><li>Function: check_robots_txt(url)</li><li>robots.txt fetch karo</li><li>Check: scraping allowed?</li><li>Print results</li></ul></li>
+<li>3️⃣ Ethical Scraper Template<ul><li>Reusable scraper with: Random delays, User-Agent, Retry, robots.txt check, Logging</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Web Scraping Ethics" (YouTube)</li>
+<li>📖 Docs: robotstxt.org</li>
+<li>📖 Reference: gdpr.eu</li>
+<li>🏋️ Practice: Clean previous scraped data</li>
+</ul>
+
+<h3>📅 DAY 20: Dynamic Websites + Playwright Setup</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Static vs Dynamic websites</li>
+<li>JavaScript rendered content</li>
+<li>Kuch sites requests se kyun scrape nahi hoti</li>
+<li>Playwright - browser automation</li>
+<li>pip install playwright</li>
+<li>playwright install - browsers download</li>
+<li>Basic script: open page, screenshot</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Static vs Dynamic Comparison<ul><li>quotes.toscrape.com (static) - requests se</li><li>quotes.toscrape.com/js/ (dynamic) - requests fail</li><li>Playwright se scrape karo</li><li>Compare results</li></ul></li>
+<li>2️⃣ Screenshot Taker<ul><li>Playwright se website kholo</li><li>Full page screenshot</li><li>Save: screenshot.png</li></ul></li>
+<li>3️⃣ Page Title Extractor<ul><li>5 websites Playwright se kholo</li><li>Title print karo</li><li>Screenshot lo</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: freeCodeCamp - "Playwright Python Tutorial"</li>
+<li>📖 Docs: playwright.dev/python/</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 12</li>
+<li>🏋️ Practice: quotes.toscrape.com/js/</li>
+</ul>
+
+<h3>📅 DAY 21: Playwright Deep Dive</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Selectors: page.locator(), page.query_selector()</li>
+<li>Interactions: .click(), .fill(), .type()</li>
+<li>Waiting: page.wait_for_selector()</li>
+<li>Extracting: .inner_text(), .get_attribute()</li>
+<li>Headless vs headed mode</li>
+<li>Handling popups and cookies</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Dynamic Quotes Scraper<ul><li>quotes.toscrape.com/js/ se scrape</li><li>Wait for JavaScript load</li><li>Extract quotes + authors</li><li>Compare with static version</li></ul></li>
+<li>2️⃣ Login Form Automation<ul><li>the-internet.herokuapp.com/login</li><li>Username: tomsmith</li><li>Password: SuperSecretPassword!</li><li>Login automatically</li><li>Success verify + screenshot</li></ul></li>
+<li>3️⃣ Search Automation<ul><li>Wikipedia kholo</li><li>Type: "Python programming"</li><li>Search click karo</li><li>First result title print</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: freeCodeCamp - "Playwright Full Course"</li>
+<li>📖 Docs: playwright.dev/python/docs/intro</li>
+<li>📖 Docs: playwright.dev/python/docs/selectors</li>
+<li>🏋️ Practice: the-internet.herokuapp.com</li>
+</ul>
+
+<h3>📅 DAY 22: Reliability Engineering</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Retry logic: tenacity ya manual</li>
+<li>Exception handling for network errors</li>
+<li>Logging: logging.info(), logging.error()</li>
+<li>Random delays: time.sleep(random.uniform(1, 5))</li>
+<li>Timeout handling</li>
+<li>Session: requests.Session()</li>
+<li>Headers rotation</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Retry Scraper<ul><li>3 retries</li><li>Fail par 5 sec wait + retry</li><li>Log: attempts, success/failure</li></ul></li>
+<li>2️⃣ Logging Scraper<ul><li>Logging: file + console</li><li>Log: page loaded, quotes found, errors</li><li>File: scraper.log</li></ul></li>
+<li>3️⃣ Session-Based Scraper<ul><li>requests.Session()</li><li>Cookies persist</li><li>Headers set once</li><li>Multiple pages scrape</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Python Retry Logic" (YouTube)</li>
+<li>📖 Docs: Python logging module</li>
+<li>📖 Docs: tenacity.readthedocs.io</li>
+</ul>
+
+<h3>📅 DAY 23: 🏆 PROJECT — JOB/NEWS ALERT SCRAPER</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Real-world scraping project</li>
+<li>Data filtering aur matching</li>
+<li>Email/Telegram alerts</li>
+<li>State management</li>
+<li>Scheduling basics</li>
+</ul>
+<h4>✅ TASK: Build Job/News Alert Scraper</h4>
+<ul>
+<li>🎯 Target: books.toscrape.com ya quotes.toscrape.com</li>
+<li>⚙️ Features:<ul><li>Scrape latest items</li><li>Compare with previous (CSV mein store)</li><li>Identify new items</li><li>Send email/Telegram alert</li><li>Save state: last_scraped.csv</li></ul></li>
+<li>📤 Output:<ul><li>CSV with all items</li><li>Email: "3 new books found!"</li><li>Log file</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Python Web Scraping Project" (YouTube)</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 16</li>
+<li>📖 Docs: Python csv module</li>
+</ul>
+<h4>✅ SUCCESS CHECKLIST</h4>
+<label><input type="checkbox"> Successfully scrapes target</label>
+<label><input type="checkbox"> Detects new items</label>
+<label><input type="checkbox"> Sends email alert</label>
+<label><input type="checkbox"> Maintains state</label>
+<label><input type="checkbox"> Error handling + logging</label>
+<label><input type="checkbox"> README.md</label>
+<label><input type="checkbox"> GitHub push</label>
+
+<h3>📅 DAY 24: 🏆 PROJECT — PRICE TRACKER</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Price monitoring workflow</li>
+<li>Data storage over time</li>
+<li>Price change detection</li>
+<li>Alert thresholds</li>
+<li>Historical data tracking</li>
+</ul>
+<h4>✅ TASK: Build Price Tracker</h4>
+<ul>
+<li>🎯 Target: books.toscrape.com (5 books)</li>
+<li>⚙️ Features:<ul><li>Scrape prices of 5 books</li><li>Store with timestamp: price_history.csv</li><li>Detect price changes</li><li>Alert if price drops below threshold</li><li>Generate trend report</li></ul></li>
+<li>📤 Output:<ul><li>CSV: Date, Book, Price, Change</li><li>Email: "Price dropped!"</li><li>Summary: Average, highest, lowest</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Python Price Tracker" (YouTube)</li>
+<li>📖 Pandas: For analysis</li>
+<li>📖 Book: Automate the Boring Stuff - Chapter 16</li>
+</ul>
+<h4>✅ SUCCESS CHECKLIST</h4>
+<label><input type="checkbox"> Scrapes 5 books</label>
+<label><input type="checkbox"> Stores price history</label>
+<label><input type="checkbox"> Detects changes</label>
+<label><input type="checkbox"> Sends alert on drop</label>
+<label><input type="checkbox"> Generates summary</label>
+<label><input type="checkbox"> Error handling + logging</label>
+<label><input type="checkbox"> README.md</label>
+<label><input type="checkbox"> GitHub push</label>
+
+<h2>🔌 PHASE 4 — APIs &amp; INTEGRATIONS (DAY 25-29)</h2>
+
+<h3>📅 DAY 25: API Concepts + Postman</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>API kya hota hai</li>
+<li>REST APIs</li>
+<li>HTTP methods: GET, POST, PUT, DELETE</li>
+<li>Endpoints</li>
+<li>JSON format</li>
+<li>Headers: Content-Type, Authorization</li>
+<li>Postman install + use</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Postman Explorer<ul><li>Download: postman.com</li><li>Test 3 APIs: https://api.github.com/users/octocat, https://jsonplaceholder.typicode.com/posts, https://open-meteo.com/v1/forecast?latitude=52.52&amp;longitude=13.41&amp;current_weather=true</li><li>Observe: status codes, response</li></ul></li>
+<li>2️⃣ JSON Parser<ul><li>API response parse karo</li><li>Specific fields extract</li><li>Pretty print</li></ul></li>
+<li>3️⃣ API Documentation Reader<ul><li>Kisi API ki docs padho</li><li>Identify: endpoints, params, auth</li><li>Test one endpoint</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Hindi: CodeWithHarry - "API Tutorial"</li>
+<li>🎬 English: freeCodeCamp - "APIs for Beginners"</li>
+<li>🔧 Tool: postman.com</li>
+<li>📖 Docs: restfulapi.net</li>
+</ul>
+
+<h3>📅 DAY 26: Python + Public APIs</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>requests se API calls</li>
+<li>Query parameters: params={"key": "value"}</li>
+<li>Response: .json()</li>
+<li>Error handling for APIs</li>
+<li>Rate limits</li>
+<li>Free APIs dhundhna</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Weather CLI<ul><li>Open-Meteo API (free, no key)</li><li>User se coordinates lo</li><li>Current weather fetch</li><li>Print: temp, wind, weather code</li></ul></li>
+<li>2️⃣ GitHub Profile Analyzer<ul><li>GitHub API</li><li>Username lo</li><li>Fetch: name, followers, repos, bio</li><li>Print formatted profile</li></ul></li>
+<li>3️⃣ Random Quote Generator<ul><li>https://api.quotable.io/random</li><li>Fetch quote</li><li>Print with author</li><li>Save to file option</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: freeCodeCamp - "Python API Tutorial"</li>
+<li>📖 List: github.com/public-apis/public-apis</li>
+<li>📖 Docs: requests.readthedocs.io</li>
+</ul>
+
+<h3>📅 DAY 27: API Keys + Security</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>API keys kya hote hain</li>
+<li>.env file - secrets store</li>
+<li>python-dotenv library</li>
+<li>.gitignore - keys Git se chhupana</li>
+<li>Authentication headers</li>
+<li>Rate limits handle</li>
+<li>API key rotation</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ OpenWeather Integration<ul><li>openweathermap.org free account</li><li>API key generate</li><li>.env: API_KEY=your_key_here</li><li>python-dotenv se load</li><li>Weather by city name</li></ul></li>
+<li>2️⃣ Secure API Client<ul><li>Function: load_api_key()</li><li>.env se load</li><li>Error if missing</li><li>Auth header</li></ul></li>
+<li>3️⃣ Rate Limiter<ul><li>Track API calls</li><li>Limit: 10/min</li><li>Wait if crossed</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Python dotenv Tutorial" (YouTube)</li>
+<li>📖 Docs: python-dotenv.readthedocs.io</li>
+<li>🔧 Site: openweathermap.org/api</li>
+<li>⚠️ Rule: NEVER commit .env files!</li>
+</ul>
+
+<h3>📅 DAY 28: Google Sheets Automation</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>gspread library</li>
+<li>Service account (Google Cloud)</li>
+<li>Sheet: read, write, update</li>
+<li>Data formatting</li>
+<li>Sharing settings</li>
+<li>Automation workflows</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Google Sheets Setup<ul><li>console.cloud.google.com</li><li>New project</li><li>Enable: Sheets API, Drive API</li><li>Service account create</li><li>JSON key download</li><li>Sheet banao + share with service email</li></ul></li>
+<li>2️⃣ Data Writer<ul><li>Scraped data Sheet mein write</li><li>Columns: Date, Item, Price, Status</li><li>Format: headers bold</li></ul></li>
+<li>3️⃣ Report Generator<ul><li>Sheet se read</li><li>Calculate totals, averages</li><li>Write summary to new sheet</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Google Sheets API Python" (YouTube)</li>
+<li>📖 Docs: gspread.readthedocs.io</li>
+<li>📖 Setup: Google Cloud Console docs</li>
+</ul>
+
+<h3>📅 DAY 29: 🏆 PROJECT — TELEGRAM ALERT BOT</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Telegram Bot API</li>
+<li>BotFather se bot banana</li>
+<li>API token management</li>
+<li>Sending: text, images, documents</li>
+<li>Webhook basics</li>
+<li>Automation triggers</li>
+</ul>
+<h4>✅ TASK: Build Telegram Alert Bot</h4>
+<ul>
+<li>1️⃣ Bot Setup<ul><li>Telegram: @BotFather</li><li>/newbot command</li><li>Name + username set</li><li>Token copy → .env mein</li></ul></li>
+<li>2️⃣ Features<ul><li>Send text messages</li><li>Formatted alerts</li><li>CSV as documents</li><li>Triggers: price drop, new item</li></ul></li>
+<li>3️⃣ Integration<ul><li>Connect with Price Tracker</li><li>Alert: "Price dropped! Old: 25, New: 20"</li><li>Daily summary</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Telegram Bot Python" (YouTube)</li>
+<li>📖 Docs: core.telegram.org/bots/api</li>
+<li>🔧 Bot: t.me/BotFather</li>
+</ul>
+
+<h2>🚀 PHASE 5 — PROFESSIONAL + DEPLOYMENT (DAY 30-34)</h2>
+
+<h3>📅 DAY 30: Git/GitHub + Portfolio Polish</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Git commands: add, commit, push, pull, branch, merge</li>
+<li>.gitignore best practices</li>
+<li>README.md - professional docs</li>
+<li>GitHub profile optimization</li>
+<li>Repository organization</li>
+<li>Git branching strategy</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ README.md Template<ul><li>Project title + emoji</li><li>Description</li><li>Features list</li><li>Installation instructions</li><li>Usage examples</li><li>Screenshots</li><li>Tech stack</li><li>License</li></ul></li>
+<li>2️⃣ GitHub Profile Polish<ul><li>Profile picture</li><li>Bio: "Python Automation Developer"</li><li>Pin top repos</li><li>Links: LinkedIn, portfolio</li></ul></li>
+<li>3️⃣ Repository Organization<ul><li>Folders mein organize</li><li>.gitignore all repos</li><li>LICENSE file (MIT)</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: freeCodeCamp - "Git &amp; GitHub Tutorial"</li>
+<li>📖 Docs: git-scm.com/doc</li>
+<li>📖 Guide: github.com/matiassingers/awesome-readme</li>
+</ul>
+
+<h3>📅 DAY 31: Professional Code Structure</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Project structure best practices</li>
+<li>config.py - configuration</li>
+<li>utils.py - helpers</li>
+<li>main.py - entry point</li>
+<li>Docstrings</li>
+<li>Type hints (basic)</li>
+<li>Comments best practices</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Refactor Price Tracker<ul><li>Split modules: config.py, scraper.py, notifier.py, main.py</li><li>Add docstrings</li><li>Add type hints</li></ul></li>
+<li>2️⃣ Config Management<ul><li>.env for secrets</li><li>config.py for settings</li><li>Load dynamically</li></ul></li>
+<li>3️⃣ Logging Setup<ul><li>Central logging</li><li>Levels: DEBUG, INFO, WARNING, ERROR</li><li>File + console</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Python Project Structure" (YouTube)</li>
+<li>📖 Guide: PEP 8 - pep8.org</li>
+<li>📖 Docs: Python docstrings</li>
+</ul>
+
+<h3>📅 DAY 32: Scheduling + Cloud</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Windows Task Scheduler</li>
+<li>Cron jobs (Linux/Mac)</li>
+<li>PythonAnywhere - free cloud</li>
+<li>Script deployment</li>
+<li>Environment variables in cloud</li>
+<li>Monitoring + alerts</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Local Scheduling<ul><li>Task Scheduler se script schedule</li><li>Daily 9 AM</li><li>Test: auto run</li></ul></li>
+<li>2️⃣ Cloud Deployment<ul><li>PythonAnywhere free account</li><li>Upload files</li><li>pip install -r requirements.txt</li><li>Set env vars</li><li>Test run</li></ul></li>
+<li>3️⃣ Scheduled Cloud Task<ul><li>PythonAnywhere scheduler</li><li>Run daily</li><li>Check logs</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Deploy Python to Cloud" (YouTube)</li>
+<li>🔧 Site: pythonanywhere.com</li>
+<li>📖 Docs: Windows Task Scheduler</li>
+<li>📖 Tool: crontab.guru</li>
+</ul>
+
+<h3>📅 DAY 33: Docker Basics (OPTIONAL)</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Docker - containerization</li>
+<li>Image vs Container</li>
+<li>Dockerfile</li>
+<li>docker build, docker run</li>
+<li>Env vars in Docker</li>
+<li>Docker Compose (basic)</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Dockerize Script<ul><li>Dockerfile likho</li><li>Build: docker build -t price-tracker .</li><li>Run: docker run price-tracker</li></ul></li>
+<li>2️⃣ Docker Compose<ul><li>docker-compose.yml</li><li>Define services</li><li>Run: docker-compose up</li></ul></li>
+<li>3️⃣ Push to Docker Hub<ul><li>Account banao</li><li>Push: docker push username/price-tracker</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: freeCodeCamp - "Docker Tutorial"</li>
+<li>📖 Docs: docs.docker.com</li>
+<li>🔧 Site: hub.docker.com</li>
+</ul>
+
+<h3>📅 DAY 34: 🏆 CAPSTONE PROJECT</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>End-to-end automation</li>
+<li>Multiple technologies combine</li>
+<li>Production-ready code</li>
+<li>Documentation + deployment</li>
+<li>Client-ready presentation</li>
+</ul>
+<h4>✅ TASK: Build "Real Estate Price Monitor"</h4>
+<ul>
+<li>1️⃣ Scraping (Playwright)<ul><li>Scrape property listings</li><li>Extract: title, price, location, size</li><li>Handle pagination</li></ul></li>
+<li>2️⃣ Data Processing (Pandas)<ul><li>Clean data</li><li>Calculate: avg price/location</li><li>Detect: price drops, new listings</li></ul></li>
+<li>3️⃣ Storage (Google Sheets)<ul><li>Store all listings</li><li>Update daily</li><li>Track history</li></ul></li>
+<li>4️⃣ Alerts (Telegram + Email)<ul><li>Alert: price drop &gt; 10%</li><li>Alert: new listings</li><li>Daily summary</li></ul></li>
+<li>5️⃣ Deployment (Cloud)<ul><li>PythonAnywhere</li><li>Schedule: daily 8 AM</li><li>Monitor logs</li></ul></li>
+<li>6️⃣ Documentation<ul><li>Professional README</li><li>Demo video (Loom)</li><li>Architecture diagram</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>📖 All previous combined</li>
+<li>🔧 Diagrams: draw.io</li>
+<li>🎬 Demo: Loom.com</li>
+<li>📖 Deployment: PythonAnywhere docs</li>
+</ul>
+<h4>✅ SUCCESS CHECKLIST</h4>
+<label><input type="checkbox"> Scrapes data</label>
+<label><input type="checkbox"> Cleans + processes</label>
+<label><input type="checkbox"> Stores in Sheets</label>
+<label><input type="checkbox"> Sends alerts</label>
+<label><input type="checkbox"> Deployed to cloud</label>
+<label><input type="checkbox"> Scheduled daily</label>
+<label><input type="checkbox"> Professional README</label>
+<label><input type="checkbox"> Demo video</label>
+<label><input type="checkbox"> GitHub complete</label>
+<label><input type="checkbox"> Client-ready</label>
+
+<h2>💰 PHASE 6 — FREELANCING &amp; FIRST CLIENT (DAY 35-45)</h2>
+
+<h3>📅 DAY 35: Niche + Offer + Pricing</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Niche selection kyu zaroori</li>
+<li>Service packages banana</li>
+<li>Pricing strategy</li>
+<li>Value-based vs hourly</li>
+<li>Target client identification</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Niche Selection (Choose ONE):<ul><li>E-commerce price monitoring</li><li>Real estate data extraction</li><li>Job market data scraping</li><li>Marketing lead generation</li><li>Financial data automation</li><li>Research: Upwork jobs in niche</li></ul></li>
+<li>2️⃣ Service Packages:<ul><li>🟢 Basic ($50-80): Simple scraper, CSV</li><li>🟡 Standard ($150-250): Scraper + alerts + Sheets</li><li>🔴 Premium ($400+): Full automation + deployment</li></ul></li>
+<li>3️⃣ Pricing Calculator:<ul><li>Estimate hours per package</li><li>hourly rate = price / hours</li><li>Aim: $20-50/hour initially</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Freelance Pricing Strategy" (YouTube)</li>
+<li>🔍 Research: Upwork similar services</li>
+<li>🔍 Research: Fiverr competitor pricing</li>
+</ul>
+
+<h3>📅 DAY 36: Portfolio Assets</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Portfolio kaise banate hain</li>
+<li>Demo videos kyu zaroori</li>
+<li>GitHub as portfolio</li>
+<li>Notion/website portfolio</li>
+<li>Case studies</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ GitHub Polish<ul><li>All projects: README.md</li><li>Screenshots in READMEs</li><li>Pin top repos (4-6)</li><li>Profile README</li></ul></li>
+<li>2️⃣ Demo Videos<ul><li>2-3 min Loom videos</li><li>Show: problem → solution → demo</li><li>Upload: YouTube (unlisted) ya Loom</li></ul></li>
+<li>3️⃣ Portfolio Page<ul><li>Option 1: Notion page</li><li>Option 2: GitHub Pages</li><li>Option 3: Carrd.co</li><li>Include: intro, projects, testimonials, contact</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Portfolio with Notion" (YouTube)</li>
+<li>🔧 Tool: loom.com</li>
+<li>🔧 Tool: pages.github.com</li>
+<li>🔧 Tool: notion.so</li>
+</ul>
+
+<h3>📅 DAY 37: Upwork Launch</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Upwork profile optimization</li>
+<li>Proposal writing</li>
+<li>Client communication</li>
+<li>Job filtering</li>
+<li>Building reviews</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Profile Setup<ul><li>Title: "Python Web Scraping &amp; Automation Expert"</li><li>Overview: Problem → Solution → Proof → CTA</li><li>Skills: Python, Web Scraping, Data Extraction</li><li>Portfolio: GitHub + demo videos</li><li>Rate: $15-25 (initially)</li></ul></li>
+<li>2️⃣ First 5 Proposals<ul><li>Find jobs in niche</li><li>CUSTOMIZED proposals (not templates)</li><li>Structure: Hook: "I can solve your [problem]", Solution: "Here's how...", Proof: "I've done similar: [link]", CTA: "Let's discuss"</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Upwork Profile Optimization" (YouTube)</li>
+<li>🔧 Site: upwork.com</li>
+<li>🔍 Study: Top-rated freelancers</li>
+</ul>
+
+<h3>📅 DAY 38: Fiverr + LinkedIn</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Fiverr gig creation</li>
+<li>SEO for gig titles</li>
+<li>LinkedIn optimization</li>
+<li>Content marketing</li>
+<li>Networking</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Fiverr Gigs (Create 2):<ul><li>Gig 1: "I will do web scraping and data extraction"</li><li>Gig 2: "I will automate your excel and email tasks"</li><li>Keywords: "python web scraping", "data extraction"</li><li>Pricing: $25, $75, $150 (3 tiers)</li><li>Portfolio: Screenshots + demo</li></ul></li>
+<li>2️⃣ LinkedIn Optimization<ul><li>Headline: "Python Automation Developer"</li><li>About: Story → Skills → Services → CTA</li><li>Featured: Project links + demos</li><li>Post 1: "I just built [project]!" + screenshot</li></ul></li>
+<li>3️⃣ Outreach Prep<ul><li>Find 20 prospects: Real estate, E-commerce, Marketing agencies</li><li>Save LinkedIn/email</li><li>Prepare messages</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Fiverr Gig Creation" (YouTube)</li>
+<li>🔧 Site: fiverr.com</li>
+<li>🔧 Site: linkedin.com</li>
+</ul>
+
+<h3>📅 DAY 39: Cold Outreach</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Cold email/LinkedIn messaging</li>
+<li>Personalization</li>
+<li>Follow-up sequences</li>
+<li>Handling objections</li>
+<li>Converting leads</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Prospect Research<ul><li>20 businesses that need automation: Real estate agents, E-commerce stores, Marketing agencies</li><li>Get email/LinkedIn</li></ul></li>
+<li>2️⃣ Outreach Messages (Send 10):<ul><li>Subject: Quick automation idea for [Business]</li><li>Hi [Name],</li><li>I came across [Business] and noticed [observation].</li><li>I help businesses automate [task]. I recently built [result].</li><li>Open to a 10-min call?</li><li>Best, [Your Name] [Portfolio Link]</li></ul></li>
+<li>3️⃣ Follow-up Plan<ul><li>Day 1: Initial</li><li>Day 3: Follow-up</li><li>Day 7: Final + case study</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Cold Email Outreach" (YouTube)</li>
+<li>🔧 Tool: LinkedIn Sales Navigator</li>
+<li>📊 Tracking: Google Sheets</li>
+</ul>
+
+<h3>📅 DAY 40: Client Delivery SOP</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Client onboarding</li>
+<li>Requirements gathering</li>
+<li>Scope definition</li>
+<li>Delivery + revisions</li>
+<li>Getting testimonials</li>
+</ul>
+<h4>✅ TASK: Create SOP Document</h4>
+<ul>
+<li>📋 CLIENT DELIVERY SOP</li>
+<li>1️⃣ REQUIREMENTS GATHERING<ul><li>15-min call</li><li>What data? What format? How often?</li><li>Document in writing</li></ul></li>
+<li>2️⃣ SCOPE DEFINITION<ul><li>Written scope via email</li><li>Deliverables, timeline, price</li><li>Client confirmation</li></ul></li>
+<li>3️⃣ DEVELOPMENT<ul><li>Build solution</li><li>Test thoroughly</li><li>Prepare demo</li></ul></li>
+<li>4️⃣ DELIVERY<ul><li>Demo video</li><li>Documentation</li><li>Walkthrough call</li></ul></li>
+<li>5️⃣ REVISIONS<ul><li>2 free revisions</li><li>Additional: $25/hour</li></ul></li>
+<li>6️⃣ PAYMENT<ul><li>50% upfront</li><li>50% on delivery</li><li>Upwork/PayPal</li></ul></li>
+<li>7️⃣ TESTIMONIAL<ul><li>Ask for review</li><li>Add to portfolio</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Freelance Client Management" (YouTube)</li>
+<li>🔧 Templates: Notion</li>
+<li>🏋️ Practice: Role-play calls</li>
+</ul>
+
+<h3>📅 DAY 41-45: DAILY GRIND ROUTINE</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Consistency in freelancing</li>
+<li>Daily routine</li>
+<li>Tracking progress</li>
+<li>Skill improvement</li>
+</ul>
+<h4>✅ TASK: Daily Routine</h4>
+<ul>
+<li>🌅 Morning (30 min):<ul><li>Check Upwork new jobs</li><li>Send 2 proposals</li><li>Check Fiverr messages</li><li>Reply to inquiries</li></ul></li>
+<li>☀️ Afternoon (1 hr):<ul><li>Learn one new library</li><li>Practice one technique</li><li>Watch one tutorial</li><li>Work on portfolio</li></ul></li>
+<li>🌙 Evening (30 min):<ul><li>Send 10 cold messages</li><li>Follow up previous</li><li>Engage LinkedIn</li><li>Track in spreadsheet</li></ul></li>
+</ul>
+<h4>📊 Tracking</h4>
+<table>
+<tr><th>Date</th><th>Proposals</th><th>Outreach</th><th>Replies</th><th>Calls</th><th>Deals</th><th>Revenue</th></tr>
+<tr><td>8/7</td><td>2</td><td>10</td><td>3</td><td>1</td><td>0</td><td>$0</td></tr>
+<tr><td>8/8</td><td>2</td><td>10</td><td>2</td><td>0</td><td>0</td><td>$0</td></tr>
+</table>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>📊 Tracking: Google Sheets</li>
+<li>🔧 Daily: Upwork, Fiverr, LinkedIn</li>
+</ul>
+
+<h2>🔮 PHASE 7 — FUTURE-PROOF &amp; SCALE (DAY 46-60)</h2>
+
+<h3>📅 DAY 46-50: AI Automation</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>OpenAI API basics</li>
+<li>GPT integration</li>
+<li>Prompt engineering</li>
+<li>AI data processing</li>
+<li>Sentiment analysis</li>
+<li>Text summarization</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ OpenAI Setup<ul><li>platform.openai.com</li><li>API key</li><li>pip install openai</li><li>Test completion</li></ul></li>
+<li>2️⃣ AI-Powered Scraper<ul><li>Scrape reviews</li><li>GPT sentiment analysis</li><li>Categorize: Positive/Neutral/Negative</li><li>Summary report</li></ul></li>
+<li>3️⃣ AI Email Writer<ul><li>Scrape job listings</li><li>GPT draft emails</li><li>Personalize</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "OpenAI API Python" (YouTube)</li>
+<li>📖 Docs: platform.openai.com/docs</li>
+</ul>
+
+<h3>📅 DAY 51-53: Scrapy for Large-Scale</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Scrapy framework</li>
+<li>Spiders</li>
+<li>Items + pipelines</li>
+<li>Middleware for proxies</li>
+<li>Scrapy vs BeautifulSoup</li>
+<li>Large-scale best practices</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Scrapy Setup<ul><li>pip install scrapy</li><li>scrapy startproject myproject</li><li>Understand structure</li></ul></li>
+<li>2️⃣ Build Spider<ul><li>Scrape books.toscrape.com</li><li>Extract: title, price, rating</li><li>Store CSV via pipeline</li></ul></li>
+<li>3️⃣ Advanced Spider<ul><li>Pagination</li><li>Delays</li><li>Retry middleware</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: freeCodeCamp - "Scrapy Tutorial"</li>
+<li>📖 Docs: docs.scrapy.org</li>
+</ul>
+
+<h3>📅 DAY 54-56: SQL Basics</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>SQL - database language</li>
+<li>SQLite - lightweight</li>
+<li>CREATE, INSERT, SELECT, UPDATE, DELETE</li>
+<li>Python sqlite3</li>
+<li>SQL vs CSV</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ SQLite Setup<ul><li>import sqlite3 (built-in)</li><li>Database: data.db</li><li>Table create</li></ul></li>
+<li>2️⃣ Store Scraped Data<ul><li>Scrape books</li><li>Store SQLite</li><li>Query: top 5 expensive</li></ul></li>
+<li>3️⃣ Data Analysis<ul><li>SQL queries</li><li>JOIN tables</li><li>COUNT, AVG, SUM</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: freeCodeCamp - "SQL Tutorial"</li>
+<li>🖥️ Interactive: SQLBolt.com</li>
+<li>📖 Docs: Python sqlite3</li>
+</ul>
+
+<h3>📅 DAY 57-58: Rate Increases + Productized Services</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>When/how to raise rates</li>
+<li>Productized services</li>
+<li>Recurring revenue</li>
+<li>Client retention</li>
+<li>Referral systems</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Rate Review<ul><li>Analyze: rate vs time</li><li>Raise 20% if profitable</li><li>Update profiles</li><li>Grandfather old clients</li></ul></li>
+<li>2️⃣ Productized Service<ul><li>"Price Monitoring Setup - $299"</li><li>Includes: scraper, alerts, deployment, 1 month support</li><li>Sell as product</li><li>Landing page (Notion/Carrd)</li></ul></li>
+<li>3️⃣ Referral System<ul><li>Ask happy clients</li><li>10% discount for referral</li><li>Template email</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>🎬 Video: "Productized Services" (YouTube)</li>
+<li>🔍 Research: Competitor pricing</li>
+</ul>
+
+<h3>📅 DAY 59-60: Review + Next 60 Days Plan</h3>
+<h4>🎯 SEEKHO</h4>
+<ul>
+<li>Self-assessment</li>
+<li>Goal setting</li>
+<li>Advanced topics</li>
+<li>Long-term planning</li>
+</ul>
+<h4>✅ TASK</h4>
+<ul>
+<li>1️⃣ Review Last 60 Days<ul><li>What worked?</li><li>What didn't?</li><li>Clients acquired?</li><li>Revenue?</li><li>Skills improved?</li></ul></li>
+<li>2️⃣ Plan Next 60 Days<ul><li>Revenue target</li><li>Clients target</li><li>Skills: FastAPI, Django, etc.</li><li>Weekly milestones</li></ul></li>
+<li>3️⃣ Advanced Topics<ul><li>FastAPI - build APIs</li><li>Django/Flask - web apps</li><li>AWS/Azure - cloud</li><li>ML basics</li><li>Advanced AI</li></ul></li>
+</ul>
+<h4>📚 RESOURCES</h4>
+<ul>
+<li>📋 Assessment: Self-review doc</li>
+<li>📋 Planning: Notion/Trello</li>
+<li>🎬 Advanced: freeCodeCamp</li>
+</ul>
+
+<h2>📚 COMPLETE RESOURCE LIBRARY</h2>
+<h4>🇮🇳 HINDI (Beginner Friendly)</h4>
+<ul>
+<li>CodeWithHarry - Python: youtube.com/@CodeWithHarry</li>
+<li>CodeWithHarry - Web Scraping</li>
+<li>Apna College - Python</li>
+<li>WsCube Tech - Python Hindi</li>
+</ul>
+<h4>🌍 ENGLISH</h4>
+<ul>
+<li>freeCodeCamp: youtube.com/@freecodecamp<ul><li>Python Full Course</li><li>Web Scraping with Python</li><li>Playwright/Selenium Full Course</li><li>APIs for Beginners</li><li>Docker Course</li></ul></li>
+<li>Programming with Mosh: Python in 1 hour</li>
+<li>Corey Schafer: Python deep-dive</li>
+<li>Keith Galli: Pandas</li>
+</ul>
+<h4>🎓 FREE COURSES &amp; BOOKS</h4>
+<ul>
+<li>CS50 Python (Harvard): cs50.harvard.edu/python/</li>
+<li>Automate the Boring Stuff: automatetheboringstuff.com</li>
+<li>Official Python Tutorial: docs.python.org/3/tutorial/</li>
+</ul>
+<h4>📖 DOCUMENTATION (Bookmark)</h4>
+<ul>
+<li>requests: requests.readthedocs.io</li>
+<li>BeautifulSoup: crummy.com/software/BeautifulSoup/bs4/doc/</li>
+<li>Playwright: playwright.dev/python/</li>
+<li>pandas: pandas.pydata.org/docs/</li>
+<li>gspread: docs.gspread.org</li>
+<li>Scrapy: docs.scrapy.org</li>
+<li>openpyxl: openpyxl.readthedocs.io</li>
+</ul>
+<h4>🎯 PRACTICE SITES (Safe for Scraping)</h4>
+<ul>
+<li>Quotes: quotes.toscrape.com (+ /js/)</li>
+<li>Books: books.toscrape.com</li>
+<li>API: jsonplaceholder.typicode.com</li>
+<li>Weather: open-meteo.com (free, no key)</li>
+<li>Python: hackerrank.com/domains/python</li>
+</ul>
+<h4>💼 FREELANCE TOOLS</h4>
+<ul>
+<li>Upwork: upwork.com</li>
+<li>Fiverr: fiverr.com</li>
+<li>LinkedIn: linkedin.com</li>
+<li>Loom: loom.com (demos)</li>
+<li>Notion: notion.so (portfolio)</li>
+<li>Postman: postman.com (API testing)</li>
+<li>PythonAnywhere: pythonanywhere.com (cloud)</li>
+</ul>
+
+<h2>🗂️ PORTFOLIO CHECKLIST</h2>
+<label><input type="checkbox"> File Organizer</label>
+<label><input type="checkbox"> Auto Report Generator (Excel + Email)</label>
+<label><input type="checkbox"> Books/Quotes Scraper (CSV + cleaning)</label>
+<label><input type="checkbox"> Job/News Alert Scraper</label>
+<label><input type="checkbox"> Price Tracker</label>
+<label><input type="checkbox"> Telegram Bot + Google Sheets</label>
+<label><input type="checkbox"> 🏆 CAPSTONE (end-to-end cloud automation)</label>
+
+<h2>⚖️ LEGAL &amp; ETHICS</h2>
+<ul>
+<li>1. robots.txt respect karo, ToS padho</li>
+<li>2. Rate limits + delays (site crash mat karo)</li>
+<li>3. Personal data bina permission NAHI</li>
+<li>4. Official API ho toh pehle API use karo</li>
+<li>5. Login-required areas scrape mat karo</li>
+<li>6. Client ko rules batao - liability se bachoge</li>
+</ul>
+
+<h2>🆘 DEBUGGING SOP (Jab code phate)</h2>
+<ul>
+<li>1. Error ka LAST LINE padho (asli message wahi)</li>
+<li>2. Exact error + library Google karo</li>
+<li>3. Official docs check karo</li>
+<li>4. print() lagao, dekho kahan bigad raha</li>
+<li>5. StackOverflow / ChatGPT / Claude (error paste)</li>
+<li>6. Reddit: r/learnpython, r/webscraping</li>
+<li>7. 30-min rule → break → fresh dekho</li>
+</ul>
+
+<h2>🕒 DAILY ROUTINE TEMPLATE (2.5 Hours)</h2>
+<ul>
+<li>⏰ 10 min → Kal ke notes review</li>
+<li>⏰ 60 min → Naya topic (video/docs + code-along)</li>
+<li>⏰ 60 min → Day ka TASK / project</li>
+<li>⏰ 10 min → GitHub commit + notes.md update</li>
+<li>⏰ 10 min → Kal ka plan</li>
+</ul>
+
+<h2>❌ COMMON MISTAKES (Mat karna)</h2>
+<ul>
+<li>1. 🚫 Tutorial hell - 6 mahine sirf videos</li>
+<li>2. 🚫 Bina portfolio client apply</li>
+<li>3. 🚫 Copy-paste bina samjhe</li>
+<li>4. 🚫 GitHub use na karna</li>
+<li>5. 🚫 "Sab karta hu" bolna - niche mein paisa</li>
+<li>6. 🚫 Saste rates - race to bottom</li>
+<li>7. 🚫 Error par give up - debugging = skill</li>
+</ul>
+
+<h2>🔥 FINAL INSTRUCTOR NOTE</h2>
+<p>Bhai, ye guide 60 din ka hai but asli game <b>CONSISTENCY</b> ka hai.</p>
+<p>Jo banda roz 2 ghante 60 din karega, wo 90% logon se aage nikal jayega kyunki 90% log Day 7 par quit kar dete hain.</p>
+<p><b>Tum mat karna.</b></p>
+<p>Day 34 ka capstone ban gaya = tum market-ready ho.<br>Day 45 tak pehla client = realistic target.</p>
+<p>Ab bahana band, Day 0 se shuru karo. 🔥</p>
+</div>
+</body>
+</html>
