@@ -1,0 +1,76 @@
+2026-08-24 18:50:51,945 [INFO] 💰 PRICE TRACKER STARTED
+2026-08-24 18:50:53,627 [INFO] 📥 5 books ke prices scrape hue
+2026-08-24 18:50:53,662 [INFO] 🆕 A Light in the Attic: £51.77 (baseline set)
+2026-08-24 18:50:53,671 [INFO] 🆕 Tipping the Velvet: £53.74 (baseline set)
+2026-08-24 18:50:53,715 [INFO] 🆕 Soumission: £50.1 (baseline set)
+2026-08-24 18:50:53,729 [INFO] 🆕 Sharp Objects: £47.82 (baseline set)
+2026-08-24 18:50:53,747 [INFO] 🆕 Sapiens: A Brief History of Humankind: £54.23 (baseline set)
+2026-08-24 18:50:53,769 [INFO] 😴 Koi bada price drop nahi is baar
+2026-08-24 18:50:53,810 [INFO] 💾 5 prices history mein save hue
+2026-08-24 18:50:53,815 [INFO] 
+📊 SUMMARY REPORT
+2026-08-24 18:50:53,818 [INFO]    Books tracked : 5
+2026-08-24 18:50:53,823 [INFO]    Average price : £51.53
+2026-08-24 18:50:53,823 [INFO]    Highest price : £54.23
+2026-08-24 18:50:53,827 [INFO]    Lowest price  : £47.82
+2026-08-24 18:51:36,431 [INFO] 💰 PRICE TRACKER STARTED
+2026-08-24 18:51:38,027 [INFO] 📥 5 books ke prices scrape hue
+2026-08-24 18:51:38,070 [INFO] ➡️ A Light in the Attic: £51.77 (no change)
+2026-08-24 18:51:38,074 [INFO] ➡️ Tipping the Velvet: £53.74 (no change)
+2026-08-24 18:51:38,081 [INFO] ➡️ Soumission: £50.1 (no change)
+2026-08-24 18:51:38,084 [INFO] ➡️ Sharp Objects: £47.82 (no change)
+2026-08-24 18:51:38,088 [INFO] ➡️ Sapiens: A Brief History of Humankind: £54.23 (no change)
+2026-08-24 18:51:38,089 [INFO] 😴 Koi bada price drop nahi is baar
+2026-08-24 18:51:38,111 [INFO] 💾 5 prices history mein save hue
+2026-08-24 18:51:38,113 [INFO] 
+📊 SUMMARY REPORT
+2026-08-24 18:51:38,114 [INFO]    Books tracked : 5
+2026-08-24 18:51:38,115 [INFO]    Average price : £51.53
+2026-08-24 18:51:38,116 [INFO]    Highest price : £54.23
+2026-08-24 18:51:38,116 [INFO]    Lowest price  : £47.82
+2026-08-24 19:09:16,130 [INFO] 💰 PRICE TRACKER STARTED
+2026-08-24 19:09:17,695 [INFO] 📥 5 books ke prices scrape hue
+2026-08-24 19:09:17,746 [INFO] ➡️ A Light in the Attic: £51.77 (no change)
+2026-08-24 19:09:17,750 [INFO] ➡️ Tipping the Velvet: £53.74 (no change)
+2026-08-24 19:09:17,752 [INFO] ➡️ Soumission: £50.1 (no change)
+2026-08-24 19:09:17,756 [INFO] ➡️ Sharp Objects: £47.82 (no change)
+2026-08-24 19:09:17,761 [INFO] ➡️ Sapiens: A Brief History of Humankind: £54.23 (no change)
+2026-08-24 19:09:17,763 [INFO] 😴 Koi bada price drop nahi is baar
+2026-08-24 19:09:17,820 [INFO] 💾 5 prices history mein save hue
+2026-08-24 19:09:17,844 [INFO] 
+📊 SUMMARY REPORT
+2026-08-24 19:09:17,860 [INFO]    Books tracked : 5
+2026-08-24 19:09:17,861 [INFO]    Average price : £51.53
+2026-08-24 19:09:17,863 [INFO]    Highest price : £54.23
+2026-08-24 19:09:17,864 [INFO]    Lowest price  : £47.82
+2026-08-24 19:58:08,529 [INFO] 💰 PRICE TRACKER STARTED
+2026-08-24 19:58:10,138 [INFO] 📥 5 books ke prices scrape hue
+2026-08-24 19:58:10,167 [INFO] 🆕 A Light in the Attic: £51.77 (baseline set)
+2026-08-24 19:58:10,169 [INFO] 🆕 Tipping the Velvet: £53.74 (baseline set)
+2026-08-24 19:58:10,172 [INFO] 🆕 Soumission: £50.1 (baseline set)
+2026-08-24 19:58:10,175 [INFO] 🆕 Sharp Objects: £47.82 (baseline set)
+2026-08-24 19:58:10,177 [INFO] 🆕 Sapiens: A Brief History of Humankind: £54.23 (baseline set)
+2026-08-24 19:58:10,178 [INFO] 😴 Koi bada price drop nahi is baar
+2026-08-24 19:58:10,208 [INFO] 💾 5 prices history mein save hue
+2026-08-24 19:58:10,209 [INFO] 
+📊 SUMMARY REPORT
+2026-08-24 19:58:10,209 [INFO]    Books tracked : 5
+2026-08-24 19:58:10,210 [INFO]    Average price : £51.53
+2026-08-24 19:58:10,211 [INFO]    Highest price : £54.23
+2026-08-24 19:58:10,212 [INFO]    Lowest price  : £47.82
+2026-08-24 19:59:28,472 [INFO] 💰 PRICE TRACKER STARTED
+2026-08-24 19:59:30,022 [INFO] 📥 5 books ke prices scrape hue
+2026-08-24 19:59:30,067 [INFO] 🔔 BIG DROP! A Light in the Attic: £65.77 → £51.77 (-21.3%)
+2026-08-24 19:59:30,068 [INFO] ➡️ Tipping the Velvet: £53.74 (no change)
+2026-08-24 19:59:30,071 [INFO] ➡️ Soumission: £50.1 (no change)
+2026-08-24 19:59:30,072 [INFO] ➡️ Sharp Objects: £47.82 (no change)
+2026-08-24 19:59:30,074 [INFO] ➡️ Sapiens: A Brief History of Humankind: £54.23 (no change)
+2026-08-24 19:59:30,075 [INFO] 🔔 PRICE DROP ALERT!
+2026-08-24 19:59:30,075 [INFO]    📉 A Light in the Attic: £65.77 → £51.77 (-21.3%)
+2026-08-24 19:59:30,087 [INFO] 💾 5 prices history mein save hue
+2026-08-24 19:59:30,088 [INFO] 
+📊 SUMMARY REPORT
+2026-08-24 19:59:30,090 [INFO]    Books tracked : 5
+2026-08-24 19:59:30,090 [INFO]    Average price : £51.53
+2026-08-24 19:59:30,091 [INFO]    Highest price : £54.23
+2026-08-24 19:59:30,092 [INFO]    Lowest price  : £47.82
