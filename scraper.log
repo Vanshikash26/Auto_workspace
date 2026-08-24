@@ -1,0 +1,11 @@
+2026-08-24 17:55:08,644 [INFO] 🚀 RELIABLE SCRAPER STARTED
+2026-08-24 17:55:08,645 [INFO] Attempt 1/3 → https://quotes.toscrape.com/page/1/
+2026-08-24 17:55:10,071 [INFO] ✅ Success! Status 200
+2026-08-24 17:55:10,073 [INFO] 📄 Page 1: 10 quotes mile
+2026-08-24 17:55:11,911 [INFO] Attempt 1/3 → https://quotes.toscrape.com/page/2/
+2026-08-24 17:55:12,494 [INFO] ✅ Success! Status 200
+2026-08-24 17:55:12,510 [INFO] 📄 Page 2: 10 quotes mile
+2026-08-24 17:55:14,280 [INFO] Attempt 1/3 → https://quotes.toscrape.com/page/3/
+2026-08-24 17:55:14,850 [INFO] ✅ Success! Status 200
+2026-08-24 17:55:14,851 [INFO] 📄 Page 3: 10 quotes mile
+2026-08-24 17:55:16,536 [INFO] 🎉 DONE! Total 30 quotes scrape hue
