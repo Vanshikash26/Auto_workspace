@@ -1,4 +1,5 @@
 import config
+import fetcher 
 
 # ============================================================
 #   🎯 INTERNSHIP RADAR - MATCHING ENGINE
@@ -8,6 +9,12 @@ import config
 SKILL_ALIASES = {
     "js": "javascript",
     "gzb": "ghaziabad",
+    "scraping": "web scraping",
+    "rest": "rest api",
+    "rest-api": "rest api",
+    "restful": "rest api",
+    "postgres": "sql",
+    "postgresql": "sql",
 }
 
 def normalize_skill(skill):
@@ -178,7 +185,13 @@ def get_sample_internships():
 def main():
     display_header()
 
-    internships = get_sample_internships()
+        # REAL data fetch karo (API se)
+    internships = fetcher.fetch_remote_jobs(limit=100)
+
+    # Agar API fail ho, toh sample data use karo (fallback)
+    if not internships:
+        print("⚠️ Real data nahi mila, sample data use kar rahe hain")
+        internships = get_sample_internships()
 
     candidates = []
     rejected_location = 0
@@ -204,7 +217,8 @@ def main():
     print(f"\n✅ {len(candidates)} internships MATCH hui!")
     print(f"🚫 Rejected: {rejected_location} (location), {rejected_skills} (skills)")
 
-    for rank, (score, intern, details) in enumerate(candidates, 1):
+        # Top 10 hi dikhao
+    for rank, (score, intern, details) in enumerate(candidates[:10], 1):
         display_internship(rank, intern, details)
 
     print(f"\n{'=' * 60}")
