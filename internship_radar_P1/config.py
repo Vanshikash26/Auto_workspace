@@ -6,14 +6,14 @@
 # Tumhari skills - 2 categories mein divide ki hain
 MY_SKILLS = {
     # CORE skills - jinme tum STRONG ho (zyada weight milega)
-    "core": ["python", "java", "sql", "web scraping"],
+    "core": ["Python", "Java", "sql", "Web scraping" , ""],
 
     # KNOWN skills - jo tumhe aati hain (kam weight)
-    "known": ["html", "css", "js", "mysql", "rest api"],
+    "known": ["HTML", "CSS", "JS", "Mysql", "Rest APIs", "FLask", "Redis", "Jinja", "Chart.js"],
 }
 
 # Target cities (office internships ke liye)
-TARGET_CITIES = ["delhi", "ghaziabad", "noida"]
+TARGET_CITIES = ["Delhi", "Ghaziabad", "Noida"]
 
 # Mode preference: "wfh_first" = WFH ko zyada priority
 MODE_PREFERENCE = "wfh_first"
