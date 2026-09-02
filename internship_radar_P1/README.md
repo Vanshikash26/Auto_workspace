@@ -2,6 +2,9 @@
 
 A Python automation tool that discovers remote internships and jobs, matches them against your skills, and notifies you only about NEW opportunities.
 
+## 🔗 Live Demo:
+      https://autoworkspace-a3gguarfpakad4lhopyehu.streamlit.app/
+
 ## ✨ Features
 
 - 🌐 **Real Data Integration** — Fetches live remote jobs from the Remotive API
