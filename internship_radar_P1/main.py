@@ -2,6 +2,7 @@ import config
 import fetcher
 import state
 import notifier
+import reporter 
 
 # ============================================================
 #   SKILL MATCHING (Part 1 wala logic)
@@ -144,6 +145,9 @@ def main():
         state.update_seen(new_candidates, seen_ids)
     else:
         print("\n😴 Koi nayi job nahi (sab pehle dekh chuke)")
+
+    # Excel report banao (har baar)
+    reporter.generate_report(candidates, new_candidates)
 
     print(f"\n{'=' * 60}")
 
