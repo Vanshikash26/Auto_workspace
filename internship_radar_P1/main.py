@@ -105,6 +105,7 @@ def display_internship(rank, intern, details):
         print(f"  📘 Known Matched : {', '.join(details['matched_known'])}")
 
     print(f"  📊 Match Score   : {details['total']}")
+    print(f"  🔗 Apply Here    : {intern['url']}")  
 
 # ============================================================
 #   SAMPLE DATA (Part 2 mein REAL scraping se aayega)

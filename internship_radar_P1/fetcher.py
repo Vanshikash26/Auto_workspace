@@ -48,6 +48,7 @@ def fetch_remote_jobs(limit=100):
             "duration": "Remote Job",
             "posted": job.get("publication_date", "")[:10],
             "skills": skills,
+            "url": job.get("url", "N/A"),
         })
 
         if len(internships) >= limit:
