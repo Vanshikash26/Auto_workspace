@@ -24,3 +24,8 @@ KNOWN_SKILL_WEIGHT = 8    # Har KNOWN skill match = 8 points
 WFH_BONUS = 20            # WFH internship ka bonus
 OFFICE_BONUS = 10         # Target city office ka bonus
 MIN_SKILL_SCORE = 10      # Isse kam score = reject
+
+# ---------- EMAIL ALERT SETTINGS ----------
+SEND_EMAIL = True           # True karo toh email jayegi
+SENDER_EMAIL = "snancy.01812@gmail.com"    
+RECEIVER_EMAIL = "snancy.01812@gmail.com" 

@@ -40,6 +40,7 @@ def fetch_remote_jobs(limit=100):
         skills = [tag.lower().strip() for tag in job.get("tags", [])]
 
         internships.append({
+            "id": job.get("id"),  
             "title": job.get("title", "N/A"),
             "company": job.get("company", "N/A"),
             "location": location,
