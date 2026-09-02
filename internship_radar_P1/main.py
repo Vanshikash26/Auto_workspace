@@ -3,6 +3,7 @@ import fetcher
 import state
 import notifier
 import reporter 
+import telegram_notifier
 
 # ============================================================
 #   SKILL MATCHING (Part 1 wala logic)
@@ -148,6 +149,12 @@ def main():
 
     # Excel report banao (har baar)
     reporter.generate_report(candidates, new_candidates)
+    if new_candidates:
+        send_tg = input("\n📱 Telegram par alert bhejna hai? (y/n): ")
+        if send_tg.lower() == 'y':
+            tg_token = input("🔑 Bot Token paste karo: ")
+            tg_chat_id = input("💬 Chat ID paste karo: ")
+            telegram_notifier.send_telegram_alert(tg_token, tg_chat_id, new_candidates)
 
     print(f"\n{'=' * 60}")
 
